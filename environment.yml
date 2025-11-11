@@ -1,0 +1,13 @@
+name: amazon-pricing
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+  - https://repo.anaconda.com/pkgs/msys2
+dependencies:
+  - jupyter
+  - matplotlib
+  - pandas
+  - plotly
+  - python=3.9
+  - seaborn
+prefix: C:\Users\bykov\miniconda3\envs\amazon-pricing

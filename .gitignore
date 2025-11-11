@@ -1,0 +1,14 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+secrets.txt
+
+# Large data files (uncomment if needed)
+# *.csv
+# *.pkl
