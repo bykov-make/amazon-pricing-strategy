@@ -1,134 +1,101 @@
-\# Amazon Pricing Strategy Analysis
 
-
-
-\## 🎯 Business Problem  
+# Amazon Pricing Strategy Analysis
+## 🎯 Business Problem
 
 "Is our discounting strategy effective, or are we leaving money on the table and training customers to wait for sales?"
 
 
+## 📊 Analysis Notebooks
 
-\## 📊 Analysis Notebooks
+### 🔍 Data Understanding & Cleaning
+[![Open in nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/bykov-make/amazon-pricing-strategy/blob/main/analysis/1_data_understanding.ipynb)
 
+**View the interactive analysis:**
 
+- **[Data Understanding Notebook](https://nbviewer.org/github/bykov-make/amazon-pricing-strategy/blob/main/analysis/1_data_understanding.ipynb)** - Complete data cleaning and initial insights
 
-\### 🔍 Data Understanding \& Cleaning
+## 📈 Quick Status
 
-\[!\[Open in nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer\_badge.svg)](https://nbviewer.org/github/bykov-make/amazon-pricing-strategy/blob/main/analysis/1\_data\_understanding.ipynb)
+- **Data**: ✅ 1,465 products cleaned and validated
+- **Analysis**: 🔄 In progress
+- **Dashboard**: 🚧 Planned
 
+## 📊 Key Findings (Initial)
 
+- **Dataset**: 1,465 products across multiple categories
+- **Pricing Strategy**: 47.7% average discount rate industry-wide
+- **Customer Response**: 4.1/5 average rating suggests discount effectiveness
+- **Data Quality**: Robust pipeline handling Indian rupee formatting (₹) and comma separators
 
-\*\*View the interactive analysis:\*\*
-
-\- \*\*\[Data Understanding Notebook](https://nbviewer.org/github/bykov-make/amazon-pricing-strategy/blob/main/analysis/1\_data\_understanding.ipynb)\*\* - Complete data cleaning and initial insights
-
-
-
-\## 📈 Quick Status
-
-\- \*\*Data\*\*: ✅ 1,465 products cleaned and validated
-
-\- \*\*Analysis\*\*: 🔄 In progress  
-
-\- \*\*Dashboard\*\*: 🚧 Planned
-
-
-
-\## 📊 Key Findings (Initial)
-
-\- \*\*Dataset\*\*: 1,465 products across multiple categories
-
-\- \*\*Pricing Strategy\*\*: 47.7% average discount rate industry-wide
-
-\- \*\*Customer Response\*\*: 4.1/5 average rating suggests discount effectiveness
-
-\- \*\*Data Quality\*\*: Robust pipeline handling Indian rupee formatting (₹) and comma separators
-
-
-
-\## 🛠️ Technical Highlights
+## 🛠️ Technical Highlights
 
 ```python
 
-\# Config-driven cleaning pipeline
+# Config-driven cleaning pipeline
 
-CLEANING\_CONFIG = {
+CLEANING_CONFIG = {
 
-&nbsp;   'currency\_columns': {
+'currency_columns': {
 
-&nbsp;       'discounted\_price': 'discounted\_price\_clean',
+'discounted_price': 'discounted_price_clean',
 
-&nbsp;       'actual\_price': 'actual\_price\_clean'
+'actual_price': 'actual_price_clean'
 
-&nbsp;   },
+},
 
-&nbsp;   'percentage\_columns': {
+'percentage_columns': {
 
-&nbsp;       'discount\_percentage': 'discount\_percent\_clean'
-
-&nbsp;   }
+'discount_percentage': 'discount_percent_clean'
 
 }
 
+}
 ```
 
 
+## 🎯 Next Phase Analysis
 
-\## 🎯 Next Phase Analysis
+- **Discount Efficiency:** ROI analysis of discount depth vs. sales volume
+- **Product Segmentation:** 2x2 matrix (Discount % vs. Rating Count)
+- **Strategic Categories:** Identify over-discounted vs. under-discounted segments
+- **Actionable Insights:** Data-driven discount optimization recommendations
+  
 
-\- \*\*Discount Efficiency:\*\* ROI analysis of discount depth vs. sales volume
+## 📁 Project Structure
 
-\- \*\*Product Segmentation:\*\* 2x2 matrix (Discount % vs. Rating Count)
-
-\- \*\*Strategic Categories:\*\* Identify over-discounted vs. under-discounted segments
-
-\- \*\*Actionable Insights:\*\* Data-driven discount optimization recommendations
-
-
-
-\## 📁 Project Structure
-
-
-
-```text
-
+  ```text
 amazon-pricing-strategy/
 
 ├── analysis/
 
-│   ├── 1\_data\_understanding.ipynb
+│ ├── 1_data_understanding.ipynb
 
-│   └── 2\_pricing\_segmentation.ipynb (planned)
+│ └── 2_pricing_segmentation.ipynb (planned)
 
 ├── data/
 
-│   └── amazon.csv
+│ └── amazon.csv
 
 ├── environment.yml
 
 ├── .gitignore
 
-└── README.md```
+└── README.md
+```
 
-
-
-\## 🤝 Contributing
+  
+## 🤝 Contributing
 
 Questions or suggestions? Please open an issue or reach out to discuss pricing strategy insights!
 
-
-
-\## 📄 License
+## 📄 License
 
 MIT License - feel free to use this analysis approach in your own projects.
 
+## 📫 Contact
 
+- **Maintained by**: Me 😁
 
-\## 📫 Contact
+- **Project**: Amazon Pricing Strategy Analysis
 
-\- \*\*Maintained by\*\*: Me 😁
-
-\- \*\*Project\*\*: Amazon Pricing Strategy Analysis  
-
-\- \*\*Status\*\*: Active Development
-
+- **Status**: Active Development
