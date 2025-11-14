@@ -1,9 +1,10 @@
 
 # Amazon Pricing Strategy Analysis
-## 🎯 Business Problem
+## 🎯 Analytical Objective
 
-"Is our discounting strategy effective, or are we leaving money on the table and training customers to wait for sales?"
+Explore Amazon's pricing landscape to understand market discount patterns and identify data-driven opportunities for future analysis.
 
+*Note: Dataset limitations prevent conclusive pricing strategy recommendations, but provide valuable market insights.
 
 ## 📊 Analysis Notebooks
 
@@ -14,9 +15,13 @@
 
 - **[Data Understanding Notebook](https://nbviewer.org/github/bykov-make/amazon-pricing-strategy/blob/main/analysis/1_data_understanding.ipynb)** - Complete data cleaning and initial insights
 
-## 📈 Quick Status
+## 📈 Exploratory Market Analysis.
 
-- **Data**: ✅ 1,465 products cleaned and validated
+- **[Links to be added]**
+
+## 📈 Project Status
+
+- **Data Engineering**: ✅ 1,465 products cleaned and validated
 - **Analysis**: 🔄 In progress
 - **Dashboard**: 🚧 Planned
 
@@ -53,33 +58,21 @@ CLEANING_CONFIG = {
 ```
 
 
-## 🎯 Next Phase Analysis
-
-- **Discount Efficiency:** ROI analysis of discount depth vs. sales volume
-- **Product Segmentation:** 2x2 matrix (Discount % vs. Rating Count)
-- **Strategic Categories:** Identify over-discounted vs. under-discounted segments
-- **Actionable Insights:** Data-driven discount optimization recommendations
-  
 
 ## 📁 Project Structure
 
   ```text
 amazon-pricing-strategy/
-
 ├── analysis/
-
-│ ├── 1_data_understanding.ipynb
-
-│ └── 2_pricing_segmentation.ipynb (planned)
-
+│   ├── 1_data_understanding.ipynb
+│   └── 2_exploratory_analysis.ipynb
+├── src/
+│   ├── data_cleaning.py
+│   └── config.py
 ├── data/
-
-│ └── amazon.csv
-
+│   └── amazon.csv
 ├── environment.yml
-
 ├── .gitignore
-
 └── README.md
 ```
 
